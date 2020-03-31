@@ -367,19 +367,50 @@ height:50vh;
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2020/03/31/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/" >
+        <a class="abstract-title" href = "/2020/03/31/%E7%A3%81%E7%9B%98%E5%B0%86MBR%E5%88%86%E5%8C%BA%E8%BD%AC%E6%8D%A2%E6%88%90GPT%E5%88%86%E5%8C%BA/" >
             
-                <span>重装系统</span>
+                <span>Windows无法安装到这个磁盘。选中的磁盘具有 MBR 分区表。在 EFI 系统上，Windows只能安装到GPT磁盘。</span>
         </a>
         <div class="abstract-content">
+            下面是在 EFI系统上，将 MBR 磁盘转换成 GPT磁盘的方法
+Shift + F10 打开cmd窗口；
+输入 Diskpart ，按下回车；
+输入 list disk ， 列出磁盘列表，可以查看磁盘容量来判断需要转化格式的磁盘；
+输入 select disk 0  ，看你select 哪个disk ，这里用 disk 0 举例；
+输入 Clean ，清空磁盘，操作前确认磁盘中无重要文件；
+输入 convert gpt ， 将MBR分区转换成GPT分区，反过来也行（convert mbr）;
+拿下;
+
+
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/03/31</span>
+            </div>
+            <!-- tags  -->
             
-本人自用重装win10系统的步骤下面是具体步骤第一步你需要在下面的链接上下载一个压缩的工具包，这个工具包不仅有写入光盘的工具，还有office的安装包、win10和office的激活工具。
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2020/03/31/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/" >
+            
+                <span>本人自用重装win10系统的步骤</span>
+        </a>
+        <div class="abstract-content">
+            下面是具体步骤第一步你需要在下面的链接上下载一个压缩的工具包，这个工具包不仅有写入光盘的工具，还有office的安装包、win10和office的激活工具。
  嘿！我是百度网盘的链接 点我点我~ 提取码：s7yl
 第二步到itellyou官网上下载一个你喜欢的操作系统（安利win10-LTSC2019，简约、流畅、牛皮、没有自动更新），然后复制链接用下载器（自用迅雷）。
 第三步用第一步下载的压缩包里的 UltralSO.exe写入下载好的操作系统，详细步骤如下：
 
 打开 UltralSO ,点击文件 -&gt; 打开 -&gt;选择你所下载的操作系统
-点...
+点击启动 -&gt; 写入硬盘映像 ...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -730,9 +761,18 @@ Mo...
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 5
+        Total : 6
         </div>
         <!-- search  -->
         
@@ -776,7 +816,7 @@ Mo...
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">03/31</span><a class="archive-post-title" href= "/2020/03/31/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/" >重装系统</a>
+            <span class="archive-post-date">03/31</span><a class="archive-post-title" href= "/2020/03/31/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/" >本人自用重装win10系统的步骤</a>
         </li>
     
     
@@ -787,6 +827,20 @@ Mo...
     
         <li class="archive-post-item">
             <span class="archive-post-date">03/30</span><a class="archive-post-title" href= "/2020/03/30/SecondBlog/" >关于blog搭建时遇到的问题——fatal：unable to auto-detect email address</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> Invalid date </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">Invalid date</span><a class="archive-post-title" href= "/2020/03/31/%E7%A3%81%E7%9B%98%E5%B0%86MBR%E5%88%86%E5%8C%BA%E8%BD%AC%E6%8D%A2%E6%88%90GPT%E5%88%86%E5%8C%BA/" >Windows无法安装到这个磁盘。选中的磁盘具有 MBR 分区表。在 EFI 系统上，Windows只能安装到GPT磁盘。</a>
         </li>
     
     </div>
