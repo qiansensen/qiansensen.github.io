@@ -367,6 +367,31 @@ height:50vh;
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2020/03/31/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" >
+            
+                <span>冒泡排序(改进)</span>
+        </a>
+        <div class="abstract-content">
+            改进思路：数组元素可能提前已经排好序了，如果已经排好序循环还未结束的话，那内循环会继续做无意义的比较（因为所有元素已经是有序啦），因此就可以在内循环的 if 中设置flag来监控排序算法有没有把元素交换位置，如果交换了位置则把flag赋新值。因此可以在外循环中判断flag有没有变化，变化了就说明有元素发生了交换；没有变化则说明元素已经排序好了，也就是可以直接break整个循环了。
+#####代码如下：
+1234567891011121314151617181920212223242526272829303132import java.util.Arrays;public class 冒泡...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/03/31</span>
+            </div>
+            <!-- tags  -->
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2020/03/30/SecondBlog/" >
             
                 <span>关于blog搭建时遇到的问题——fatal：unable to auto-detect email address</span>
@@ -656,9 +681,20 @@ Mo...
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 3
+        Total : 4
         </div>
         <!-- search  -->
         
@@ -699,6 +735,11 @@ Mo...
     
     <div class="archive-year"> 2020 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/31</span><a class="archive-post-title" href= "/2020/03/31/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" >冒泡排序(改进)</a>
+        </li>
     
     
         <li class="archive-post-item">
