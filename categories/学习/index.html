@@ -354,24 +354,35 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2020/03/29/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" >
+        <a class="abstract-title" href = "/2020/04/01/%E5%A6%82%E4%BD%95%E5%9C%A8hexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8A%8A%E6%96%87%E7%AB%A0%E5%88%86%E9%97%A8%E5%88%AB%E7%B1%BB/" >
             
-                <span>冒泡排序(改进)</span>
+                <span>hexo博客中添加categories分类</span>
         </a>
         <div class="abstract-content">
-            改进思路：数组元素可能提前已经排好序了，如果已经排好序循环还未结束的话，那内循环会继续做无意义的比较（因为所有元素已经是有序啦），因此就可以在内循环的 if 中设置flag来监控排序算法有没有把元素交换位置，如果交换了位置则把flag赋新值。因此可以在外循环中判断flag有没有变化，变化了就说明有元素发生了交换；没有变化则说明元素已经排序好了，也就是可以直接break整个循环了。
-代码如下：1234567891011121314151617181920212223242526272829303132import java.util.Arrays;public class 冒泡排序 &#1...
+            方法如下:
+在根目录下scaffolds/post.md中，添加一行 categories: 
+title: {{ title }}
+date: {{ date }}
+tags:
+categories:   //这行是新加的(这是注释) 
+实际编写文章的时候，在开头加上categories: 的标签。例如：
+---
+title: Hello，World!你好，世界！
+date: 2014-01-21 23:33:02
+tags: java学习标签
+categories: 编程类
+---这样在文章发布时，在git中使用hexo g命令，hexo会在根目录/public/categrises...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/03/29</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/04/01</span>
             </div>
             <!-- tags  -->
             
             <div class= abstract-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "java">java</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "hexo">hexo</a>
     
 </div>
             
@@ -528,9 +539,20 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 6
+        Total : 7
         </div>
         <!-- search  -->
         
@@ -543,6 +565,11 @@
     
     <div class="archive-year"> 2020 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/01</span><a class="archive-post-title" href= "/2020/04/01/%E5%A6%82%E4%BD%95%E5%9C%A8hexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8A%8A%E6%96%87%E7%AB%A0%E5%88%86%E9%97%A8%E5%88%AB%E7%B1%BB/" >hexo博客中添加categories分类</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -585,6 +612,8 @@
     
         <span class="sidebar-tag-name" data-tags="java"><span class="iconfont-archer">&#xe606;</span>java</span>
     
+        <span class="sidebar-tag-name" data-tags="hexo"><span class="iconfont-archer">&#xe606;</span>hexo</span>
+    
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
     <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
@@ -621,6 +650,8 @@ jsonContent:
         <span class="sidebar-category-name" data-categories="随笔"><span class="iconfont-archer">&#xe60a;</span>随笔</span>
     
         <span class="sidebar-category-name" data-categories="学习"><span class="iconfont-archer">&#xe60a;</span>学习</span>
+    
+        <span class="sidebar-category-name" data-categories="编程"><span class="iconfont-archer">&#xe60a;</span>编程</span>
     
     </div>
     <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>

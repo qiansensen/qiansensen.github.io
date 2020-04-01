@@ -354,6 +354,47 @@
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2020/04/01/%E5%A6%82%E4%BD%95%E5%9C%A8hexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8A%8A%E6%96%87%E7%AB%A0%E5%88%86%E9%97%A8%E5%88%AB%E7%B1%BB/" >
+            
+                <span>hexo博客中添加categories分类</span>
+        </a>
+        <div class="abstract-content">
+            方法如下:
+在根目录下scaffolds/post.md中，添加一行 categories: 
+title: {{ title }}
+date: {{ date }}
+tags:
+categories:   //这行是新加的(这是注释) 
+实际编写文章的时候，在开头加上categories: 的标签。例如：
+---
+title: Hello，World!你好，世界！
+date: 2014-01-21 23:33:02
+tags: java学习标签
+categories: 编程类
+---这样在文章发布时，在git中使用hexo g命令，hexo会在根目录/public/categrises...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/04/01</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "hexo">hexo</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2020/03/30/SecondBlog/" >
             
                 <span>关于blog搭建时遇到的问题——fatal：unable to auto-detect email address</span>
@@ -700,9 +741,20 @@ Mo...
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 6
+        Total : 7
         </div>
         <!-- search  -->
         
@@ -715,6 +767,11 @@ Mo...
     
     <div class="archive-year"> 2020 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/01</span><a class="archive-post-title" href= "/2020/04/01/%E5%A6%82%E4%BD%95%E5%9C%A8hexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8A%8A%E6%96%87%E7%AB%A0%E5%88%86%E9%97%A8%E5%88%AB%E7%B1%BB/" >hexo博客中添加categories分类</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -757,6 +814,8 @@ Mo...
     
         <span class="sidebar-tag-name" data-tags="java"><span class="iconfont-archer">&#xe606;</span>java</span>
     
+        <span class="sidebar-tag-name" data-tags="hexo"><span class="iconfont-archer">&#xe606;</span>hexo</span>
+    
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
     <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
@@ -793,6 +852,8 @@ jsonContent:
         <span class="sidebar-category-name" data-categories="随笔"><span class="iconfont-archer">&#xe60a;</span>随笔</span>
     
         <span class="sidebar-category-name" data-categories="学习"><span class="iconfont-archer">&#xe60a;</span>学习</span>
+    
+        <span class="sidebar-category-name" data-categories="编程"><span class="iconfont-archer">&#xe60a;</span>编程</span>
     
     </div>
     <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
