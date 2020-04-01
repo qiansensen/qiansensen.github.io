@@ -20,23 +20,22 @@
     <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content="">
-    <meta name="description" content="下面是在 EFI系统上，将 MBR 磁盘转换成 GPT磁盘的方法 Shift + F10 打开cmd窗口； 输入 Diskpart ，按下回车； 输入 list disk ， 列出磁盘列表，可以查看磁盘容量来判断需要转化格式的磁盘； 输入 select disk 0  ，看你select 哪个disk ，这里用 disk 0 举例； 输入 Clean ，清空磁盘，操作前确认磁盘中无重要文件； 输">
+    <meta name="description" content="下面是具体步骤第一步你需要在下面的链接上下载一个压缩的工具包，这个工具包不仅有写入光盘的工具，还有office的安装包、win10和office的激活工具。  嘿！我是百度网盘的链接 点我点我~ 提取码：s7yl 第二步到itellyou官网上下载一个你喜欢的操作系统（安利win10-LTSC2019，简约、流畅、牛皮、没有自动更新），然后复制链接用下载器（自用迅雷）。 第三步用第一步下载的压缩包">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Windows无法安装到这个磁盘。选中的磁盘具有 MBR 分区表。在 EFI 系统上，Windows只能安装到GPT磁盘。">
-<meta property="og:url" content="http://yoursite.com/2020/03/31/%E7%A3%81%E7%9B%98%E5%B0%86MBR%E5%88%86%E5%8C%BA%E8%BD%AC%E6%8D%A2%E6%88%90GPT%E5%88%86%E5%8C%BA/index.html">
+<meta property="og:title" content="本人自用重装win10系统的步骤">
+<meta property="og:url" content="http://yoursite.com/2020/03/28/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/index.html">
 <meta property="og:site_name" content="qss&#39;s blog">
-<meta property="og:description" content="下面是在 EFI系统上，将 MBR 磁盘转换成 GPT磁盘的方法 Shift + F10 打开cmd窗口； 输入 Diskpart ，按下回车； 输入 list disk ， 列出磁盘列表，可以查看磁盘容量来判断需要转化格式的磁盘； 输入 select disk 0  ，看你select 哪个disk ，这里用 disk 0 举例； 输入 Clean ，清空磁盘，操作前确认磁盘中无重要文件； 输">
+<meta property="og:description" content="下面是具体步骤第一步你需要在下面的链接上下载一个压缩的工具包，这个工具包不仅有写入光盘的工具，还有office的安装包、win10和office的激活工具。  嘿！我是百度网盘的链接 点我点我~ 提取码：s7yl 第二步到itellyou官网上下载一个你喜欢的操作系统（安利win10-LTSC2019，简约、流畅、牛皮、没有自动更新），然后复制链接用下载器（自用迅雷）。 第三步用第一步下载的压缩包">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/f8e247eac94f0af34af3ac70e71a3ff40a3fb935f41380fad83a29af7fbdfd159d9a352e7b2a7e7beaec4e002bcb3780?pictype=scale&from=30113&version=3.3.3.3&uin=2609828363&fname=9EE84EABFBBF6F92FE59DE0E52F129FF.jpg&size=750">
-<meta property="article:published_time" content="2020-03-31T15:10:20.662Z">
-<meta property="article:modified_time" content="2020-03-31T15:22:58.155Z">
+<meta property="article:published_time" content="2020-03-27T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-04-01T07:58:09.439Z">
 <meta property="article:author" content="qiansensen&#x3D;Lw">
+<meta property="article:tag" content="生活">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/f8e247eac94f0af34af3ac70e71a3ff40a3fb935f41380fad83a29af7fbdfd159d9a352e7b2a7e7beaec4e002bcb3780?pictype=scale&from=30113&version=3.3.3.3&uin=2609828363&fname=9EE84EABFBBF6F92FE59DE0E52F129FF.jpg&size=750">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     
-    <title>Windows无法安装到这个磁盘。选中的磁盘具有 MBR 分区表。在 EFI 系统上，Windows只能安装到GPT磁盘。 · Lw==qiansensen</title>
+    <title>本人自用重装win10系统的步骤 · Lw==qiansensen</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -231,7 +230,7 @@
                 <a href="/" >qiansensen&#39;s blog .</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">Windows无法安装到这个磁盘。选中的磁盘具有 MBR 分区表。在 EFI 系统上，Windows只能安装到GPT磁盘。</a>
+                <a href="#" class="post-name">本人自用重装win10系统的步骤</a>
             </div>
     </div>
     
@@ -261,7 +260,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            Windows无法安装到这个磁盘。选中的磁盘具有 MBR 分区表。在 EFI 系统上，Windows只能安装到GPT磁盘。
+            本人自用重装win10系统的步骤
             <!-- 404 -->
             
         </h1>
@@ -278,14 +277,20 @@ height:50vh;
             <div class="post-intros">
                 <!-- 文章页标签  -->
                 
+                    <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "生活">生活</a>
+    
+</div>
+                
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">125</span>Reading time: <span class="post-count reading-time">1 min</span></span>
+                        <span>Word count: <span class="post-count word-count">588</span>Reading time: <span class="post-count reading-time">2 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2020/03/31</span>
+                    <span class="post-intro-time">2020/03/28</span>
                     
                     <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                         <span class="iconfont-archer">&#xe602;</span>
@@ -409,15 +414,25 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <p><img src="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/f8e247eac94f0af34af3ac70e71a3ff40a3fb935f41380fad83a29af7fbdfd159d9a352e7b2a7e7beaec4e002bcb3780?pictype=scale&from=30113&version=3.3.3.3&uin=2609828363&fname=9EE84EABFBBF6F92FE59DE0E52F129FF.jpg&size=750" alt="图片"></p>
-<h3 id="下面是在-EFI系统上，将-MBR-磁盘转换成-GPT磁盘的方法"><a href="#下面是在-EFI系统上，将-MBR-磁盘转换成-GPT磁盘的方法" class="headerlink" title="下面是在 EFI系统上，将 MBR 磁盘转换成 GPT磁盘的方法"></a>下面是在 EFI系统上，将 MBR 磁盘转换成 GPT磁盘的方法</h3><ol>
-<li>Shift + F10 打开cmd窗口；</li>
-<li>输入 Diskpart ，按下回车；</li>
-<li>输入 list disk ， 列出磁盘列表，可以查看磁盘容量来判断需要转化格式的磁盘；</li>
-<li>输入 select disk 0  ，看你select 哪个disk ，这里用 disk 0 举例；</li>
-<li>输入 Clean ，清空磁盘，操作前确认磁盘中无重要文件；</li>
-<li>输入 convert gpt ， 将MBR分区转换成GPT分区，反过来也行（convert mbr）;</li>
-<li>拿下;</li>
+        <h2 id="下面是具体步骤"><a href="#下面是具体步骤" class="headerlink" title="下面是具体步骤"></a>下面是具体步骤</h2><h5 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h5><p>你需要在下面的链接上下载一个压缩的工具包，这个工具包不仅有写入光盘的工具，还有office的安装包、win10和office的激活工具。</p>
+<p> <a href="https://pan.baidu.com/s/1VjbyaXRo69hUgTvTl2w7eQ" target="_blank" rel="noopener">嘿！我是百度网盘的链接 点我点我<del>~</del></a><br> <p><font color="blue">提取码：s7yl</font></p></p>
+<h5 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h5><p>到<a href="https://msdn.itellyou.cn/" target="_blank" rel="noopener">itellyou官网</a>上下载一个你喜欢的操作系统（安利win10-LTSC2019，简约、流畅、牛皮、没有自动更新），然后复制链接用下载器（自用迅雷）。</p>
+<h5 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h5><p>用第一步下载的压缩包里的 <font color="blue">UltralSO.exe</font>写入下载好的操作系统，详细步骤如下：</p>
+<ol>
+<li>打开 UltralSO ,点击文件 -&gt; 打开 -&gt;选择你所下载的操作系统</li>
+<li>点击启动 -&gt; 写入硬盘映像 -&gt; 磁盘驱动器是你的u盘(U盘总存储容量得6G以上，因为有的操作系统差不多有5G)，映像文件是你所下载的操作系统 -&gt; 点击写入(<font color="blue">写入时会格式化u盘，如有重要文件，请在写入前备份到本地除C盘以外的磁盘中</font>)</li>
+<li>等待写入完成。</li>
+</ol>
+<h5 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h5><ol>
+<li>这步比较关键，你得知道你的电脑主板开机的时候进bios界面的快捷键，BIOS界面就是开进后有一个蓝色背景的界面，不清楚主板bios界面的可以百度，我的神船主板是F2，<br>一般是F2\F8\F10\F12等等，不知道可以重启的时候乱按的去、试得去或者知道主板型号干脆百度。</li>
+<li>进到bios界面之后，切换到boot里，找到你的U盘，选择U盘启动，然后就按照安装流程来就好了(安装的时候选择自定义安装而不是升级系统)。</li>
+</ol>
+<h5 id="第五步"><a href="#第五步" class="headerlink" title="第五步"></a>第五步</h5><p>安装完之后…</p>
+<ol>
+<li>先升级驱动</li>
+<li>调整分辨率，有的系统字体不清楚也要进行校正（有的系统有自动修复的开关:在windows设置里搜‘高级缩放设置’，将修复应用缩放打开就可以）</li>
+<li>用我压缩包里office的安装包,压缩包里有很多office激活码，如果懒得找：<font color="blue">6QFDX-PYH2G-PPYFD-C7RJM-BBKQ8</font></li>
+<li>拿下！<h5 id="应该就是上面这么多"><a href="#应该就是上面这么多" class="headerlink" title="应该就是上面这么多"></a>应该就是上面这么多</h5><a href="https://pan.baidu.com/s/1UJ09A8soAGMp9nn_fxFRTA" target="_blank" rel="noopener">微软常用运行库合集</a>可以修复很多系统错误和bug，提取码：lctw</li>
 </ol>
 
     </article>
@@ -425,9 +440,9 @@ height:50vh;
     
         <div class="license-wrapper">
             <p>Author：<a href="http://yoursite.com">qiansensen=Lw</a>
-            <p>原文链接：<a href="http://yoursite.com/2020/03/31/%E7%A3%81%E7%9B%98%E5%B0%86MBR%E5%88%86%E5%8C%BA%E8%BD%AC%E6%8D%A2%E6%88%90GPT%E5%88%86%E5%8C%BA/">http://yoursite.com/2020/03/31/%E7%A3%81%E7%9B%98%E5%B0%86MBR%E5%88%86%E5%8C%BA%E8%BD%AC%E6%8D%A2%E6%88%90GPT%E5%88%86%E5%8C%BA/</a>
-            <p>发表日期：<a href="http://yoursite.com/2020/03/31/%E7%A3%81%E7%9B%98%E5%B0%86MBR%E5%88%86%E5%8C%BA%E8%BD%AC%E6%8D%A2%E6%88%90GPT%E5%88%86%E5%8C%BA/">March 31st 2020, 11:10:20 pm</a>
-            <p>更新日期：<a href="http://yoursite.com/2020/03/31/%E7%A3%81%E7%9B%98%E5%B0%86MBR%E5%88%86%E5%8C%BA%E8%BD%AC%E6%8D%A2%E6%88%90GPT%E5%88%86%E5%8C%BA/">March 31st 2020, 11:22:58 pm</a>
+            <p>原文链接：<a href="http://yoursite.com/2020/03/28/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/">http://yoursite.com/2020/03/28/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/</a>
+            <p>发表日期：<a href="http://yoursite.com/2020/03/28/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/">March 28th 2020, 12:00:00 am</a>
+            <p>更新日期：<a href="http://yoursite.com/2020/03/28/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/">April 1st 2020, 3:58:09 pm</a>
             <p>版权声明：本文采用<a rel="license noopener" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -435,12 +450,17 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
+                <div class="nextSlogan">Next Post</div>
+                <a href= "/2020/03/29/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" title= "冒泡排序(改进)">
+                    <div class="nextTitle">冒泡排序(改进)</div>
+                </a>
+            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href= "/2020/03/31/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/" title= "本人自用重装win10系统的步骤">
-                    <div class="prevTitle">本人自用重装win10系统的步骤</div>
+                <a href= "/2020/03/28/Markdown%E8%AF%AD%E6%B3%95/" title= "Lw‘s  First  Blog ——关于markdown语法">
+                    <div class="prevTitle">Lw‘s  First  Blog ——关于markdown语法</div>
                 </a>
             
         </li>
@@ -556,7 +576,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#下面是在-EFI系统上，将-MBR-磁盘转换成-GPT磁盘的方法"><span class="toc-number">1.</span> <span class="toc-text">下面是在 EFI系统上，将 MBR 磁盘转换成 GPT磁盘的方法</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#下面是具体步骤"><span class="toc-number">1.</span> <span class="toc-text">下面是具体步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#第一步"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">第一步</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#第二步"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">第二步</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#第三步"><span class="toc-number">1.0.0.3.</span> <span class="toc-text">第三步</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#第四步"><span class="toc-number">1.0.0.4.</span> <span class="toc-text">第四步</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#第五步"><span class="toc-number">1.0.0.5.</span> <span class="toc-text">第五步</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#应该就是上面这么多"><span class="toc-number">1.0.0.6.</span> <span class="toc-text">应该就是上面这么多</span></a></li></ol></li></ol></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
@@ -569,6 +589,12 @@ top:50vh;
     <div class="sidebar-content sidebar-content-show-archive">
           <div class="sidebar-panel-archives">
     <!-- 在ejs中将archive按照时间排序 -->
+    
+    
+    
+    
+    
+    
     
     
     
@@ -636,46 +662,8 @@ top:50vh;
     
     
     
-    <div class="archive-year"> 2014 </div>
-    <ul class="year-list">
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">01/21</span><a class="archive-post-title" href= "/2014/01/21/hello-world/" >Hello qiansensen</a>
-        </li>
-    
-    
-    
-    
-    
-        </ul>
-    
-    <div class="archive-year"> Invalid date </div>
-    <ul class="year-list">
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">Invalid date</span><a class="archive-post-title" href= "/2020/03/30/FirstBlog/" >Lw‘s  First  Blog ——关于markdown语法</a>
-        </li>
-    
-    
-    
-    
-    
-        </ul>
-    
     <div class="archive-year"> 2020 </div>
     <ul class="year-list">
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">03/31</span><a class="archive-post-title" href= "/2020/03/31/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/" >本人自用重装win10系统的步骤</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">03/31</span><a class="archive-post-title" href= "/2020/03/31/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" >冒泡排序(改进)</a>
-        </li>
     
     
         <li class="archive-post-item">
@@ -683,17 +671,28 @@ top:50vh;
         </li>
     
     
-    
-    
-    
-        </ul>
-    
-    <div class="archive-year"> Invalid date </div>
-    <ul class="year-list">
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/30</span><a class="archive-post-title" href= "/2020/03/30/%E7%A3%81%E7%9B%98%E5%B0%86MBR%E5%88%86%E5%8C%BA%E8%BD%AC%E6%8D%A2%E6%88%90GPT%E5%88%86%E5%8C%BA/" >Windows无法安装到这个磁盘。选中的磁盘具有 MBR 分区表。在 EFI 系统上，Windows只能安装到GPT磁盘。</a>
+        </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">Invalid date</span><a class="archive-post-title" href= "/2020/03/31/%E7%A3%81%E7%9B%98%E5%B0%86MBR%E5%88%86%E5%8C%BA%E8%BD%AC%E6%8D%A2%E6%88%90GPT%E5%88%86%E5%8C%BA/" >Windows无法安装到这个磁盘。选中的磁盘具有 MBR 分区表。在 EFI 系统上，Windows只能安装到GPT磁盘。</a>
+            <span class="archive-post-date">03/29</span><a class="archive-post-title" href= "/2020/03/29/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" >冒泡排序(改进)</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/28</span><a class="archive-post-title" href= "/2020/03/28/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/" >本人自用重装win10系统的步骤</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/28</span><a class="archive-post-title" href= "/2020/03/28/Markdown%E8%AF%AD%E6%B3%95/" >Lw‘s  First  Blog ——关于markdown语法</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/21</span><a class="archive-post-title" href= "/2020/01/21/hello-world/" >Hello qiansensen</a>
         </li>
     
     </div>
@@ -701,7 +700,11 @@ top:50vh;
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
     
-        <span class="sidebar-tag-name" data-tags="写作"><span class="iconfont-archer">&#xe606;</span>写作</span>
+        <span class="sidebar-tag-name" data-tags="学习"><span class="iconfont-archer">&#xe606;</span>学习</span>
+    
+        <span class="sidebar-tag-name" data-tags="生活"><span class="iconfont-archer">&#xe606;</span>生活</span>
+    
+        <span class="sidebar-tag-name" data-tags="java"><span class="iconfont-archer">&#xe606;</span>java</span>
     
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
@@ -737,6 +740,8 @@ jsonContent:
     <div class="sidebar-categories-name">
     
         <span class="sidebar-category-name" data-categories="随笔"><span class="iconfont-archer">&#xe60a;</span>随笔</span>
+    
+        <span class="sidebar-category-name" data-categories="学习"><span class="iconfont-archer">&#xe60a;</span>学习</span>
     
     </div>
     <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
