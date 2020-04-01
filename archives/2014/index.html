@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta property="og:type" content="website">
 <meta property="og:title" content="qss&#39;s blog">
-<meta property="og:url" content="http://yoursite.com/archives/2020/index.html">
+<meta property="og:url" content="http://yoursite.com/archives/2014/index.html">
 <meta property="og:site_name" content="qss&#39;s blog">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="qiansensen&#x3D;Lw">
@@ -354,139 +354,31 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2020/03/31/%E7%A3%81%E7%9B%98%E5%B0%86MBR%E5%88%86%E5%8C%BA%E8%BD%AC%E6%8D%A2%E6%88%90GPT%E5%88%86%E5%8C%BA/" >
+        <a class="abstract-title" href = "/2014/01/21/hello-world/" >
             
-                <span>Windows无法安装到这个磁盘。选中的磁盘具有 MBR 分区表。在 EFI 系统上，Windows只能安装到GPT磁盘。</span>
+                <span>Hello qiansensen</span>
         </a>
         <div class="abstract-content">
-            
-下面是在 EFI系统上，将 MBR 磁盘转换成 GPT磁盘的方法
-Shift + F10 打开cmd窗口；
-输入 Diskpart ，按下回车；
-输入 list disk ， 列出磁盘列表，可以查看磁盘容量来判断需要转化格式的磁盘；
-输入 select disk 0  ，看你select 哪个disk ，这里用 disk 0 举例；
-输入 Clean ，清空磁盘，操作前确认磁盘中无重要文件；
-输入 convert gpt ， 将MBR分区转换成GPT分区，反过来也行（convert mbr）;
-拿下;
+            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new "My New Post"
 
+More info: Writing
+Run server1$ hexo server
 
+Mo...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/03/31</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2014/01/21</span>
             </div>
             <!-- tags  -->
             
-        </div>
-    </article>
+            <div class= abstract-tags >
     
+        <a class="post-tag" href="javascript:void(0);" data-tags = "写作">写作</a>
     
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/03/31/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/" >
-            
-                <span>本人自用重装win10系统的步骤</span>
-        </a>
-        <div class="abstract-content">
-            下面是具体步骤第一步你需要在下面的链接上下载一个压缩的工具包，这个工具包不仅有写入光盘的工具，还有office的安装包、win10和office的激活工具。
- 嘿！我是百度网盘的链接 点我点我~ 提取码：s7yl
-第二步到itellyou官网上下载一个你喜欢的操作系统（安利win10-LTSC2019，简约、流畅、牛皮、没有自动更新），然后复制链接用下载器（自用迅雷）。
-第三步用第一步下载的压缩包里的 UltralSO.exe写入下载好的操作系统，详细步骤如下：
-
-打开 UltralSO ,点击文件 -&gt; 打开 -&gt;选择你所下载的操作系统
-点击启动 -&gt; 写入硬盘映像 ...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/03/31</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/03/31/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" >
-            
-                <span>冒泡排序(改进)</span>
-        </a>
-        <div class="abstract-content">
-            改进思路：数组元素可能提前已经排好序了，如果已经排好序循环还未结束的话，那内循环会继续做无意义的比较（因为所有元素已经是有序啦），因此就可以在内循环的 if 中设置flag来监控排序算法有没有把元素交换位置，如果交换了位置则把flag赋新值。因此可以在外循环中判断flag有没有变化，变化了就说明有元素发生了交换；没有变化则说明元素已经排序好了，也就是可以直接break整个循环了。
-代码如下：1234567891011121314151617181920212223242526272829303132import java.util.Arrays;public class 冒泡排序 &#1...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/03/31</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/03/30/SecondBlog/" >
-            
-                <span>关于blog搭建时遇到的问题——fatal：unable to auto-detect email address</span>
-        </a>
-        <div class="abstract-content">
-            自己动手搭建blog因为一个小问题花了小半天时间，错因：fatal: unable to auto-detect email address
-问题描述用github和git搭建blog的时候,输入最后一步:
-npm install hexo-deloyer-git --save
-出错：fatal: unable to auto-detect email address
-
-解决方法参考网上的解决方法就是找到.deploy_git中的隐藏文件.git(显示隐藏文件的方法自行百度)，再找到.git目录中的config文件，在最后边加上三行(其实其他地方也存在.git文件，如果不确定就把全部.g...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/03/30</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/03/30/FirstBlog/" >
-            
-                <span>Lw‘s  First  Blog ——关于markdown语法</span>
-        </a>
-        <div class="abstract-content">
-            markdown 语法注意：写博客要在G:\blog\blog1\source_posts目录下创建md文件（我自己用IDEA编写），每次写完一篇blog之后都要重新打开 git 部署到GitHub上，输入的git命令行如下:
- hexo g -d 
-
-关于取标题”#“的个数代表标题的级数.
-关于段落这是一个红色的段落
-
-可以用html的p标签语法: &lt;p align=”left”&gt;&lt;font face= “微软雅黑” color=”red” size=”28px”&gt;段落内容,字体,颜色,和字号的修改都可以用html语法 &lt;/font&gt;&lt;/p&g...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/03/30</span>
-            </div>
-            <!-- tags  -->
+</div>
             
         </div>
     </article>
