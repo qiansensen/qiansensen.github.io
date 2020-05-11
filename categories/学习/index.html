@@ -354,6 +354,40 @@
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2020/05/11/tomcat%E6%8E%A7%E5%88%B6%E5%8F%B0%E6%9C%89%E4%B9%B1%E7%A0%81/" >
+            
+                <span>解决关于 tomcat 在控制台出现乱码的现象</span>
+        </a>
+        <div class="abstract-content">
+            出现乱码原因：   编码格式不一致，tomcat指定 UTF-8 编码，控制台使用 GBK 编码。
+如何解决？更改 tomcat 配置文件1、找到 tomcat 安装目录下的 conf 目录里的 logging.properties 配置文件
+
+2、用记事本打开此配置文件，并把所有 &apos;UTF-8&apos; 更改为 &apos;GBK&apos; 
+亲测有效。
+
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/05/11</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "tomcat">tomcat</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2020/04/17/JDBC%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93/" >
             
                 <span>JDBC连接数据库</span>
@@ -751,9 +785,22 @@ npm install hexo-deloyer-git --save
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 14
+        Total : 15
         </div>
         <!-- search  -->
         
@@ -766,6 +813,11 @@ npm install hexo-deloyer-git --save
     
     <div class="archive-year"> 2020 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/11</span><a class="archive-post-title" href= "/2020/05/11/tomcat%E6%8E%A7%E5%88%B6%E5%8F%B0%E6%9C%89%E4%B9%B1%E7%A0%81/" >解决关于 tomcat 在控制台出现乱码的现象</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -872,6 +924,8 @@ npm install hexo-deloyer-git --save
         <span class="sidebar-tag-name" data-tags="JDBC"><span class="iconfont-archer">&#xe606;</span>JDBC</span>
     
         <span class="sidebar-tag-name" data-tags="C语言"><span class="iconfont-archer">&#xe606;</span>C语言</span>
+    
+        <span class="sidebar-tag-name" data-tags="tomcat"><span class="iconfont-archer">&#xe606;</span>tomcat</span>
     
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>

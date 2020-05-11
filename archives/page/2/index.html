@@ -354,6 +354,36 @@
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2020/03/29/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" >
+            
+                <span>冒泡排序(改进)</span>
+        </a>
+        <div class="abstract-content">
+            改进思路：数组元素可能提前已经排好序了，如果已经排好序循环还未结束的话，那内循环会继续做无意义的比较（因为所有元素已经是有序啦），因此就可以在内循环的 if 中设置flag来监控排序算法有没有把元素交换位置，如果交换了位置则把flag赋新值。因此可以在外循环中判断flag有没有变化，变化了就说明有元素发生了交换；没有变化则说明元素已经排序好了，也就是可以直接break整个循环了。
+代码如下：1234567891011121314151617181920212223242526272829303132import java.util.Arrays;public class 冒泡排序 &#1...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/03/29</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "java">java</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2020/03/28/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/" >
             
                 <span>本人自用重装win10系统的步骤</span>
@@ -739,9 +769,22 @@ Mo...
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 14
+        Total : 15
         </div>
         <!-- search  -->
         
@@ -754,6 +797,11 @@ Mo...
     
     <div class="archive-year"> 2020 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/11</span><a class="archive-post-title" href= "/2020/05/11/tomcat%E6%8E%A7%E5%88%B6%E5%8F%B0%E6%9C%89%E4%B9%B1%E7%A0%81/" >解决关于 tomcat 在控制台出现乱码的现象</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -860,6 +908,8 @@ Mo...
         <span class="sidebar-tag-name" data-tags="JDBC"><span class="iconfont-archer">&#xe606;</span>JDBC</span>
     
         <span class="sidebar-tag-name" data-tags="C语言"><span class="iconfont-archer">&#xe606;</span>C语言</span>
+    
+        <span class="sidebar-tag-name" data-tags="tomcat"><span class="iconfont-archer">&#xe606;</span>tomcat</span>
     
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
