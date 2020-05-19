@@ -354,6 +354,38 @@
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2020/05/19/%E5%9C%A8IDEA%E7%BC%96%E8%AF%91%E5%90%8E%E5%90%8C%E6%97%B6%E5%8A%A8%E6%80%81%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE%E5%88%B0tomcat/" >
+            
+                <span>IDEA动态部署项目到本地tomcat服务器上</span>
+        </a>
+        <div class="abstract-content">
+            IDEA在编译后可以同时动态部署项目到本地tomcat服务器上一、Run-&gt;Edit Configurations..
+二、Deployment的下面选择:war exploded结尾的-&gt; Edit Artifact(右边那支笔)
+三、把Output directory 路径 改成tomcat服务器路径\webapps\自己的项目文件夹名称
+四、停掉 IDEA 中的 tomcat ，启动本地 tomcat 看看能否打开已部署的项目
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/05/19</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "tomcat">tomcat</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2020/05/11/tomcat%E6%8E%A7%E5%88%B6%E5%8F%B0%E6%9C%89%E4%B9%B1%E7%A0%81/" >
             
                 <span>解决关于 tomcat 在控制台出现乱码的现象</span>
@@ -695,45 +727,6 @@ categories: 编程类
         </div>
     </article>
     
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/03/30/%E7%A3%81%E7%9B%98%E5%B0%86MBR%E5%88%86%E5%8C%BA%E8%BD%AC%E6%8D%A2%E6%88%90GPT%E5%88%86%E5%8C%BA/" >
-            
-                <span>Windows无法安装到这个磁盘。选中的磁盘具有 MBR 分区表。在 EFI 系统上，Windows只能安装到GPT磁盘。</span>
-        </a>
-        <div class="abstract-content">
-            
-下面是在 EFI系统上，将 MBR 磁盘转换成 GPT磁盘的方法
-Shift + F10 打开cmd窗口；
-输入 Diskpart ，按下回车；
-输入 list disk ， 列出磁盘列表，可以查看磁盘容量来判断需要转化格式的磁盘；
-输入 select disk 0  ，看你select 哪个disk ，这里用 disk 0 举例；
-输入 Clean ，清空磁盘，操作前确认磁盘中无重要文件；
-输入 convert gpt ， 将MBR分区转换成GPT分区，反过来也行（convert mbr）;
-拿下;
-
-
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/03/30</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "随笔">随笔</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
     <!-- paginator  -->
     
     <nav class="page-nav">
@@ -999,9 +992,22 @@ Shift + F10 打开cmd窗口；
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 15
+        Total : 16
         </div>
         <!-- search  -->
         
@@ -1014,6 +1020,11 @@ Shift + F10 打开cmd窗口；
     
     <div class="archive-year"> 2020 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/19</span><a class="archive-post-title" href= "/2020/05/19/%E5%9C%A8IDEA%E7%BC%96%E8%AF%91%E5%90%8E%E5%90%8C%E6%97%B6%E5%8A%A8%E6%80%81%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE%E5%88%B0tomcat/" >IDEA动态部署项目到本地tomcat服务器上</a>
+        </li>
     
     
         <li class="archive-post-item">
