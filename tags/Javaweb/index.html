@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta property="og:type" content="website">
 <meta property="og:title" content="qss&#39;s blog">
-<meta property="og:url" content="http://yoursite.com/tags/tomcat/index.html">
+<meta property="og:url" content="http://yoursite.com/tags/Javaweb/index.html">
 <meta property="og:site_name" content="qss&#39;s blog">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="qiansensen&#x3D;Lw">
@@ -354,60 +354,29 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2020/05/19/%E5%9C%A8IDEA%E7%BC%96%E8%AF%91%E5%90%8E%E5%90%8C%E6%97%B6%E5%8A%A8%E6%80%81%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE%E5%88%B0tomcat/" >
+        <a class="abstract-title" href = "/2020/05/27/Javaweb%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E8%AE%BE%E7%BD%AE/" >
             
-                <span>IDEA动态部署项目到本地tomcat服务器上</span>
+                <span>Javaweb项目的IDEA创建和设置</span>
         </a>
         <div class="abstract-content">
-            IDEA在编译后可以同时动态部署项目到本地tomcat服务器上一、Run-&gt;Edit Configurations..
-二、Deployment的下面选择:war exploded结尾的-&gt; Edit Artifact(右边那支笔)
-三、把Output directory 路径 改成tomcat服务器路径\webapps\自己的项目文件夹名称
-四、停掉 IDEA 中的 tomcat ，启动本地 tomcat 看看能否打开已部署的项目
+            
+
+Javaweb项目的IDEA创建一、先 File-&gt;new-&gt;project , 创建一个空项目(Empty Project),空项目下可以有很多个javaweb模块
+
+二、在这个空项目下创建一个javaweb模块,在WEB-INF下创建classes和lib文件夹 : File -&gt; Project Structure-&gt;Modules-&gt;Paths-&gt;Use module compile output path（把下面俩个路径都改成刚刚创建的classes文件夹）
+
+三、点 File -&gt; Project Structure-&gt;Ar...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/05/19</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/05/27</span>
             </div>
             <!-- tags  -->
             
             <div class= abstract-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "tomcat">tomcat</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/05/11/tomcat%E6%8E%A7%E5%88%B6%E5%8F%B0%E6%9C%89%E4%B9%B1%E7%A0%81/" >
-            
-                <span>解决关于 tomcat 在控制台出现乱码的现象</span>
-        </a>
-        <div class="abstract-content">
-            出现乱码原因：   编码格式不一致，tomcat指定 UTF-8 编码，控制台使用 GBK 编码。
-如何解决？更改 tomcat 配置文件1、找到 tomcat 安装目录下的 conf 目录里的 logging.properties 配置文件
-
-2、用记事本打开此配置文件，并把所有 &apos;UTF-8&apos; 更改为 &apos;GBK&apos; 
-亲测有效。
-
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/05/11</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "tomcat">tomcat</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Javaweb">Javaweb</a>
     
 </div>
             
