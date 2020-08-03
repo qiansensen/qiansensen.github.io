@@ -367,6 +367,42 @@ height:50vh;
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2020/08/03/order%20by%E5%90%8E%E9%9D%A2%E7%94%A8%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%AF%BC%E8%87%B4%E6%8E%92%E5%BA%8F%E5%A4%B1%E8%B4%A5%EF%BC%81/" >
+            
+                <span>order by 后面用占位符&#39;?&#39;导致排序失败</span>
+        </a>
+        <div class="abstract-content">
+            
+
+String sql = &quot;select empno,ename,sal from emp where sal &gt; ? and sal &lt; ? order by  ?  desc&quot;;
+       //预编译
+       ps = conn.prepareStatement(sql);
+       //设置占位符,绑定参数
+       ps.setInt(1,1000);
+       ps.setInt(2,3000);//          ps.setString(3,”sal”); order by 后面设置占位符会让order by失效...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/08/03</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "jdbc.mysql">jdbc.mysql</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2020/05/27/Javaweb%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E8%AE%BE%E7%BD%AE/" >
             
                 <span>Javaweb项目的IDEA创建和设置</span>
@@ -696,38 +732,6 @@ public class 拷贝目标文件夹到指定目录下 {
             <div class= abstract-tags >
     
         <a class="post-tag" href="javascript:void(0);" data-tags = "java">java</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/04/02/%E7%BD%91%E5%9D%80/" >
-            
-                <span>好用实用的网站</span>
-        </a>
-        <div class="abstract-content">
-            自用的实用网站电影   1.电影下载网址   2.在线电影   3.进击的巨人part2
-计算机学习   1.java学习   2.系统、office下载   3.小图标下载
-音乐   1.无损音质
-
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/04/02</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "网站">网站</a>
     
 </div>
             
@@ -1151,9 +1155,24 @@ public class 拷贝目标文件夹到指定目录下 {
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 19
+        Total : 20
         </div>
         <!-- search  -->
         
@@ -1166,6 +1185,11 @@ public class 拷贝目标文件夹到指定目录下 {
     
     <div class="archive-year"> 2020 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/03</span><a class="archive-post-title" href= "/2020/08/03/order%20by%E5%90%8E%E9%9D%A2%E7%94%A8%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%AF%BC%E8%87%B4%E6%8E%92%E5%BA%8F%E5%A4%B1%E8%B4%A5%EF%BC%81/" >order by 后面用占位符'?'导致排序失败</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -1305,6 +1329,8 @@ public class 拷贝目标文件夹到指定目录下 {
         <span class="sidebar-tag-name" data-tags="环境变量和MySQL驱动"><span class="iconfont-archer">&#xe606;</span>环境变量和MySQL驱动</span>
     
         <span class="sidebar-tag-name" data-tags="Javaweb"><span class="iconfont-archer">&#xe606;</span>Javaweb</span>
+    
+        <span class="sidebar-tag-name" data-tags="jdbc.mysql"><span class="iconfont-archer">&#xe606;</span>jdbc.mysql</span>
     
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
