@@ -354,6 +354,48 @@
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2020/10/12/%E5%89%8D%E7%AB%AF%E5%B1%95%E7%A4%BA%E5%90%8E%E7%AB%AF%E6%95%B0%E6%8D%AE%E5%BA%93%E6%97%B6%E9%97%B4%E6%9C%89%E8%AF%AF/" >
+            
+                <span>web前端页面展示后端数据库时间有误（结合SpringBoot）</span>
+        </a>
+        <div class="abstract-content">
+            问题原因：前端与后端时区不一致关于段落前端时区：
+
+Mon Oct 12 2020 22:31:09 GMT+0800 (中国标准时间)
+
+
+Spring后端时区,传参通过 @JsonFormat 注解设置格式和时区
+
+
+@DateTimeFormat(pattern = &quot;yyyy-MM-dd&quot;)
+@JsonFormat(pattern = &quot;yyyy-MM-dd&quot;, timezone = &quot;GMT+8&quot;)
+private Date birth;
+当前后端日期显示有误时，应该考虑到时区不一致的问题。
+
+
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/10/12</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "markdown">markdown</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2020/03/28/Markdown%E8%AF%AD%E6%B3%95/" >
             
                 <span>Lw‘s  First  Blog ——关于markdown语法</span>
@@ -747,9 +789,24 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 22
+        Total : 23
         </div>
         <!-- search  -->
         
@@ -762,6 +819,11 @@
     
     <div class="archive-year"> 2020 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/12</span><a class="archive-post-title" href= "/2020/10/12/%E5%89%8D%E7%AB%AF%E5%B1%95%E7%A4%BA%E5%90%8E%E7%AB%AF%E6%95%B0%E6%8D%AE%E5%BA%93%E6%97%B6%E9%97%B4%E6%9C%89%E8%AF%AF/" >web前端页面展示后端数据库时间有误（结合SpringBoot）</a>
+        </li>
     
     
         <li class="archive-post-item">
