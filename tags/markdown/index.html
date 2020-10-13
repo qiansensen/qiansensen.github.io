@@ -354,25 +354,24 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2020/10/12/%E5%89%8D%E7%AB%AF%E5%B1%95%E7%A4%BA%E5%90%8E%E7%AB%AF%E6%95%B0%E6%8D%AE%E5%BA%93%E6%97%B6%E9%97%B4%E6%9C%89%E8%AF%AF/" >
+        <a class="abstract-title" href = "/2020/10/12/el-date-picker%20%E7%BB%84%E4%BB%B6%E5%89%8D%E7%AB%AF%E6%97%B6%E9%97%B4%E5%85%A5%E5%BA%93%E5%B0%91%E4%B8%80%E5%A4%A9%E7%9A%84%E9%97%AE%E9%A2%98/" >
             
-                <span>web前端页面展示后端数据库时间有误（结合SpringBoot）</span>
+                <span>web前端el-date-picker 组件前端时间入库会少一天的问题（结合SpringBoot）</span>
         </a>
         <div class="abstract-content">
-            问题原因：前端与后端时区不一致关于段落前端时区：
+            问题原因：前后端发送接收的 “时间格式不一致”问题解决前端格式： 
 
-Mon Oct 12 2020 22:31:09 GMT+0800 (中国标准时间)
+在 el-date-picker组件上设置时间格式 value-format="yyyy-MM-dd" 
 
 
-Spring后端时区,传参通过 @JsonFormat 注解设置格式和时区
+Spring后端时间格式,传参通过 @JsonFormat 注解设置格式和时区
 
 
 @DateTimeFormat(pattern = &quot;yyyy-MM-dd&quot;)
 @JsonFormat(pattern = &quot;yyyy-MM-dd&quot;, timezone = &quot;GMT+8&quot;)
 private Date birth;
-当前后端日期显示有误时，应该考虑到时区不一致的问题。
 
-
+当前后端日期显示有误时，应该考虑到时...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -822,7 +821,7 @@ private Date birth;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">10/12</span><a class="archive-post-title" href= "/2020/10/12/%E5%89%8D%E7%AB%AF%E5%B1%95%E7%A4%BA%E5%90%8E%E7%AB%AF%E6%95%B0%E6%8D%AE%E5%BA%93%E6%97%B6%E9%97%B4%E6%9C%89%E8%AF%AF/" >web前端页面展示后端数据库时间有误（结合SpringBoot）</a>
+            <span class="archive-post-date">10/12</span><a class="archive-post-title" href= "/2020/10/12/el-date-picker%20%E7%BB%84%E4%BB%B6%E5%89%8D%E7%AB%AF%E6%97%B6%E9%97%B4%E5%85%A5%E5%BA%93%E5%B0%91%E4%B8%80%E5%A4%A9%E7%9A%84%E9%97%AE%E9%A2%98/" >web前端el-date-picker 组件前端时间入库会少一天的问题（结合SpringBoot）</a>
         </li>
     
     
